@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in loop</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+//     var number=[23,23,232,32,3];
+//     let txt="";
+//     for(let x in number){
+//     txt+=number[x];
+//     document.write(txt);
+//     }
+
+    const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML=txt;
+
+function myFunction(value, index, array) {
+  txt += value;
+
+}
+
+
+// var car=[1,2,3,4,5,6];
+// let txt="";
+// function.forEach(myFunction);
+
+// function myFunction(value,index,array){
+
+//     txt + = value;
+}
+</script>
+</body>
+</html>

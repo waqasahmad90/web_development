@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date method</title>
+</head>
+<style>
+
+.bttn{
+
+    background-color: lightskyblue;
+    width: 21%;
+    margin: auto;
+    padding: 20px;
+    height: 350px;
+    border: 2px solid black;
+
+}
+.bttn button{
+    border-radius: 12px;
+    background-color:green ;
+    padding: 8px;
+    margin: 7px;
+    width: 120px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+    color: white;
+}
+.bttn button:hover{
+    background-color:black;
+
+}
+
+</style>
+<body>
+    
+   
+    <h1 id="res"></h1>
+    <div class="bttn " class="cols cols-md">
+        <p style=" color:white;background-color:green;text-align:center;font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 18px; padding: 20px;">ONICBYTE</p>
+    <button onclick="getdate()">Date</button>
+    <button onclick="year()">Year</button><br><br>
+    <button onclick="Month()">Month</button>
+    <button onclick="todate()">TodayDate</button><br><br>
+    <button onclick="min()">Minute</button>
+    <button onclick="time()">Time</button><br><br>
+    <button onclick="sec()">Second</button>  
+    <button onclick="hr()">Hours</button>
+</div>
+<script>
+var date=new Date()
+function getdate(){
+document.getElementById('res').innerHTML=date;
+}
+
+function year(){
+    document.getElementById('res').innerHTML=date.getFullYear();
+}
+
+function Month(){
+   
+    var Month=["january","Febraury","March","Aprile","May","June","July","August","September","October","November","December"];
+    document.getElementById('res').innerHTML=Month[date.getMonth()];
+}
+
+function todate(){
+    document.getElementById('res').innerHTML=date.getDate();
+}
+
+function min(){
+    document.getElementById('res').innerHTML=date.getMinutes();
+}
+
+function time(){
+    document.getElementById('res').innerHTML=date.getTime();
+}
+
+function sec(){
+    document.getElementById('res').innerHTML=date.getSeconds();
+}
+
+function hr(){
+    document.getElementById('res').innerHTML=date.getHours();
+}
+
+</script>
+
+</body>
+</html>

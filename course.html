@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Courses</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.featured-courses {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+.featured-courses h1 {
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.course-card {
+    background-color: white;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+}
+
+.course-card img {
+    width: 100%;
+    height: auto;
+}
+
+.course-card h3 {
+    margin: 15px;
+    font-size: 24px;
+}
+
+.course-card p {
+    margin: 0 15px 20px;
+    font-size: 16px;
+}
+
+.enroll-btn {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.enroll-btn:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <section class="featured-courses">
+        <h1>Featured Courses</h1>
+        <div class="course-container">
+            <div class="course-card">
+                <img src="dit-course.jpg" alt="DIT Course">
+                <h3>DIT Course</h3>
+                <p>Learn the fundamentals of IT with our comprehensive DIT Course.</p>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="web-development.jpg" alt="Web Development Course">
+                <h3>Web Development Course</h3>
+                <p>Master the art of creating websites with our Web Development Course.</p>
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
+            <!-- Add more courses as needed -->
+        </div>
+    </section>
+</body>
+</html>

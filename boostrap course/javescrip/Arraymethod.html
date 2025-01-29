@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="res"></h1>
+
+    <button onclick="pop()" style="background-color: green; color:white;font-family: 'Times New Roman', Times, serif;padding: 10px; width:100px;">POP</button>
+    <button onclick="push()" style="background-color: yellow; color:white;font-family: 'Times New Roman', Times, serif;padding: 10px; width:100px;">PUSH</button>
+    <button onclick="unshift()" style="background-color: lightgreen; color:white;font-family: 'Times New Roman', Times, serif;padding: 10px; width:100px;">UNSHIFT</button>
+    <button onclick="shift()" style="background-color: olivedrab; color:white;font-family: 'Times New Roman', Times, serif;padding: 10px; width:100px;">SHIFT</button>
+    <button onclick="reverse()" style="background-color: olivedrab; color:white;font-family: 'Times New Roman', Times, serif;padding: 10px; width:100px;">REVERSE</button>
+    <script>
+    var fruit=["banana","apple","mango","orange"];
+    var demo=fruit;
+    document.getElementById("res").innerText=demo;
+
+   function pop(){
+ demo.pop();
+ document.getElementById("res").innerText=demo;
+   }
+    function push(){
+
+        demo.push("Hello");
+        document.getElementById("res").innerText=demo;
+    }
+    function unshift(){
+        demo.unshift("waqas");
+        document.getElementById("res").innerText=demo;
+    }
+
+    function shift(){
+        demo.unshift("Graphs");
+        document.getElementById("res").innerText=demo;
+    }
+
+    function reverse(){
+        demo.reverse();
+        document.getElementById("res").innerText=demo;
+    }
+    </script>
+</body>
+</html>
